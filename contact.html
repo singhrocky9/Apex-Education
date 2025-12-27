@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apex Education Centre | Home</title>
+  <title>Apex Education Centre | Contact</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,21 +20,21 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero container">
-    <h1>Welcome to Apex Education Centre</h1>
-    <p>Your Pathway to Academic Excellence!</p>
-  </section>
-
-  <!-- Main Content -->
+  <!-- Contact Form -->
   <section class="container">
-    <h2 class="section-title">Our Courses</h2>
-    <p>We provide coaching for:</p>
-    <ul>
-      <li>School Curriculum (Class 5–12)</li>
-      <li>Competitive Exams (JEE, NEET)</li>
-      <li>Language & Skill Development</li>
-    </ul>
+    <h1 class="section-title">Contact Us</h1>
+    <form>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
