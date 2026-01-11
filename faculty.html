@@ -1,0 +1,194 @@
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Faculty | APEX Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color:  whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            color: #1e293b;
+        }
+
+        /* Professional Card Effect */
+        .faculty-card {
+            background: white;
+            border-radius: 24px;
+            border: 1px solid #052957;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border-color: #6366f1;
+        }
+
+        /* Image Placeholder Style */
+        .faculty-img-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 2px dashed #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f1f5f9;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .faculty-card:hover .faculty-img-container {
+            border-color: #6366f1;
+            background: #eef2ff;
+        }
+
+        .faculty-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .faculty-img-container i {
+            color: #94a3b8;
+            font-size: 40px;
+        }
+
+        .dept-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .dept-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background: #6366f1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="py-16 px-6">
+
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <a href="index.html" class="inline-flex items-center px-6 py-2 rounded-full text-sm mb-8 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition shadow-sm">
+                <i class="fas fa-arrow-left mr-2 text-indigo-500"></i> Back to Home
+            </a>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                Meet Our <span class="text-indigo-600">Expert Faculty</span>
+            </h1>
+            <p class="text-slate-500 text-lg max-w-xl mx-auto">সেরা শিক্ষকদের নির্দেশনায় আপনার স্বপ্নের পথে এগিয়ে চলুন।</p>
+        </div>
+
+        <div class="mb-24">
+            <h2 class="text-2xl font-bold mb-10 text-slate-800 dept-title">Arts Department</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Aniket Sir">
+                        </div>
+                    <h3 class="text-xl font-bold text-slate-900">Aniket Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Bengali, History & Sanskrit</p>
+                    <p class="text-sm text-sky blue-400">Sanskrit Specialist</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Utsav Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Utsav Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Geography</p>
+                    <p class="text-sm text-sky blue-400"> Expert Educator</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="c:\Users\THIS-PC\Downloads\IMG-20241225-WA0015.jpg" alt="Susmita Ma'am">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Susmita Ma'am</h3>
+                 <p class="text-indigo-600 font-medium text-sm mt-1">English</p>
+                    <p class="text-sm text-sky blue-400">English communication Expert</p>
+                </div>
+        </div>
+
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold mb-10 text-slate-800 dept-title">Science Department</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Sujit Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Mathematics</p>
+                    <p class="text-sm text-sky blue-400">Quantitative Expert</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Manab Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Physics</p>
+                    <p class="text-sm text-sky blue-400">conceptual Specialist</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Subrodeep Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Computer Science</p>
+                    <p class="text-sm text-sky blue-400">Tech & Programing Expert</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="c:\Users\THIS-PC\Pictures\1768103460610.jpg" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Akash Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Biology</p>
+                    <p class="text-sm text-sky blue-400">Life Science Expert</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="https://via.placeholder.com/150" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">abc Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">Chemistry</p>
+                    <p class="text-sm text-sky blue-400">Chemistry Faculty</p>
+                </div>
+
+                <div class="faculty-card p-10 text-center">
+                    <div class="faculty-img-container">
+                        <img src="" alt="Aniket Sir">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Rocky Sir</h3>
+                    <p class="text-indigo-600 font-medium text-sm mt-1">physical science</p>
+                    <p class="text-sm text-sky blue-400">science Faculty</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
