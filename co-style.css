@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f9; /* Halka gray background jate card gulo bhalo bojha jay */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.logo span {
+    color: #3498db; /* Professional Blue */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+.btn-login {
+    background: #3498db;
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+/* Page Header Section */
+.page-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content h1 span {
+    color: #f1c40f; /* Gold accent for "Programs" */
+}
+
+/* Container & Titles */
+.container {
+    padding: 50px 8%;
+}
+
+.section-title {
+    margin: 40px 0 20px;
+    font-size: 22px;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    color: #2c3e50;
+}
+
+.section-title span {
+    font-weight: 400;
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+/* Course Grid & Cards */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #3498db;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Different Colors for Different Categories */
+.course-card.highlight { border-top-color: #e67e22; } /* Orange */
+.course-card.science { border-top-color: #2ecc71; }   /* Green */
+.course-card.arts { border-top-color: #9b59b6; }      /* Purple */
+
+.tag {
+    font-size: 12px;
+    background: #ebf5fb;
+    color: #3498db;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.course-info h3 {
+    margin: 15px 0 10px;
+    color: #2c3e50;
+}
+
+.course-info p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Enroll Button */
+.enroll-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.enroll-btn:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #2c3e50;
+    color: #bdc3c7;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px; }
+    .nav-links { gap: 10px; }
+    .header-content h1 { font-size: 2rem; }
+}
